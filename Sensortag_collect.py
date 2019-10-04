@@ -54,7 +54,7 @@ class SensorTagCollector(Thread):
                     print(" Accelerometer: ",s )                    
                     self.tag.waitForNotifications(self._sampling_interval_sec)
                     file.write("\n")
-                    file.write(str(s))
+                    file.write(str(s).replace("(","").replace(")",""))
                 except Exception as e:
                     print str(e)
                     self.tag.disconnect()
