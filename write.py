@@ -1,6 +1,6 @@
 import codecs
-file = codecs.open("sdt.py", "w", "utf-8")
-print("Nhap noi dung file")
+file = codecs.open("numphone.py", "w", "utf-8")
+print("Moi ban nhap so dien thoai moi: ")
 
 a = input()
 b= "a="
